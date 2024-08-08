@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-red: #FE5F55;
+    --primary-red-hover: #FE4134;
+    --grey: #50514F;
+    --white: #FFFFFF;
+    --light-grey: #F6F5F8;
+    /* App colors */
+    --project-grey: #a3a3a3;
+    --project-red: #dd8c94;
+    --project-yellow: #e9ca6d;
+    --project-green: #8dd3b3;
+    --project-light-blue: #81d9eb;
+    --project-blue: #7eaef1;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+}
+
+header {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    width: 100%;
+    height: 60px;
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header p {
+    padding-inline: 0.8rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    background-color: var(--light-grey);
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.card:hover {
+    background-color: #c4c0d2;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-main {
+    display: flex;
+    justify-content: center;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-gap: 2.3rem;
+    width: 100%;
+    padding-inline: 7rem;
+    padding-top: 2rem;
+}
+
+.form-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    padding-inline: 0.5rem;
+}
